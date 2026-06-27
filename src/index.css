@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wine:      #4A0218;
+  --color-wine-deep: #320110;
+  --color-wine-700:  #6B1426;
+  --color-bone:      #FAF6EF;
+  --color-bone-2:    #F3ECE1;
+  --color-blush:     #EFE2DA;
+  --color-ink:       #2B2126;
+  --color-ink-soft:  #6E6166;
+  --color-brass:     #B5894E;
+  --color-white:     #FFFFFF;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Hanken Grotesk", system-ui, sans-serif;
+  --font-ar:      "Noto Naskh Arabic", serif;
+  --font-ur:      "Noto Nastaliq Urdu", serif;
+  --font-hi:      "Noto Sans Devanagari", sans-serif;
+}
+
+:root {
+  --line:      rgba(74, 2, 24, 0.14);
+  --line-soft: rgba(74, 2, 24, 0.08);
+  --shadow:    0 1px 2px rgba(74, 2, 24, 0.04), 0 12px 32px -12px rgba(74, 2, 24, 0.16);
+  --radius:    18px;
+  --radius-pill: 999px;
+
+  /* Text on wine/wine-deep backgrounds */
+  --wine-bg-text:      #fdeef0; /* primary CTA text, ghost btn text on dark bg */
+  --wine-callout-text: #f6e6e9; /* headings on wine callout blocks */
+  --wine-bg-muted:     #d4b8be; /* muted body on wine backgrounds */
+  --wine-bg-sep:       #7a5560; /* separators on wine backgrounds */
+  --wine-bg-border:    rgba(253, 238, 240, 0.35); /* ghost btn border on dark bg */
+  --wine-bg-subtle:    rgba(253, 238, 240, 0.06); /* ghost btn hover bg on dark bg */
+}
+
+footer {
+  --footer-muted: var(--wine-bg-muted);
+  --footer-sep:   var(--wine-bg-sep);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #FAF6EF;
+  color: #2B2126;
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 430;
+  letter-spacing: -0.01em;
+  line-height: 1.06;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid #4A0218;
+  outline-offset: 2px;
+}
